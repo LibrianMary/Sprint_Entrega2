@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Wireframe_Sprint</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="moneyField_txt">$$$$$</string>
+    <string name="ItemValue_txt">$$$$$</string>
+    <string name="fishcolection_txt">Peixes</string>
+    <string name="itenscolection_text">Itens</string>
+    <string name="local4bt_txt">Local 4</string>
+    <string name="local3bt_txt">Local 3</string>
+    <string name="local2bt_txt">Local 2</string>
+    <string name="local1bt_txt">Local 1</string>
+    <string name="FishInfo">Informações do peixe (descrição, local, preço e tamanho)</string>
+</resources>

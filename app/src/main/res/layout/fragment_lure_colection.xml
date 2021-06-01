@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparente"
+    tools:context=".LureColectionFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_24" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="@dimen/MoneyField_width"
+            android:layout_height="@dimen/MoneyField_height"
+            android:src="@drawable/ic_moneyfield"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.96"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.005" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="@dimen/Plusbt_width"
+            android:layout_height="@dimen/Pusbt_height"
+            android:backgroundTint="@color/verde"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            app:icon="@drawable/ic_baseline_add_24"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.80"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.018"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/moneyField_txt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.93"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.027" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/constraint_mgTop"
+            android:paddingStart="@dimen/constraint_pd"
+            android:paddingTop="@dimen/constraint_pd"
+            android:paddingEnd="@dimen/constraint_pd"
+            android:paddingBottom="@dimen/constraint_pd">
+
+            <ImageView
+                android:id="@+id/namelure_img"
+                android:layout_width="@dimen/luretitle_Width"
+                android:layout_height="@dimen/luretitle_Height"
+                android:src="@drawable/fishinglure"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.04" />
+
+            <ImageView
+                android:id="@+id/lureicon_imgL"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginEnd="@dimen/icon_mgHorizont"
+                android:src="@drawable/fishinglure_Item"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/lureicon_imgR"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/namelure_img"
+                app:layout_constraintVertical_bias="0.08" />
+
+            <ImageView
+                android:id="@+id/lureicon_imgR"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginStart="@dimen/icon_mgHorizont"
+                android:src="@drawable/fishinglure_Item"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/lureicon_imgL"
+                app:layout_constraintTop_toBottomOf="@id/namelure_img"
+                app:layout_constraintVertical_bias="0.08" />
+
+            <ImageView
+                android:id="@+id/lureicon_imgL1"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginTop="@dimen/icon_mgTop"
+                android:layout_marginEnd="@dimen/icon_mgHorizont"
+                android:src="@drawable/fishinglure_Item"
+                app:layout_constraintEnd_toStartOf="@id/lureicon_imgR1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lureicon_imgL" />
+
+            <ImageView
+                android:id="@+id/lureicon_imgR1"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginStart="@dimen/icon_mgHorizont"
+                android:layout_marginTop="@dimen/icon_mgTop"
+                android:src="@drawable/fishinglure_Item"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/lureicon_imgL1"
+                app:layout_constraintTop_toBottomOf="@id/lureicon_imgR" />
+
+            <ImageView
+                android:id="@+id/lureicon_imgL2"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginTop="@dimen/icon_mgTop"
+                android:layout_marginEnd="@dimen/icon_mgHorizont"
+                android:src="@drawable/fishinglure_Item"
+                app:layout_constraintEnd_toStartOf="@id/lureicon_imgR2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lureicon_imgL1" />
+
+            <ImageView
+                android:id="@+id/lureicon_imgR2"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginStart="@dimen/icon_mgHorizont"
+                android:layout_marginTop="@dimen/icon_mgTop"
+                android:src="@drawable/fishinglure_Item"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/lureicon_imgL2"
+                app:layout_constraintTop_toBottomOf="@id/lureicon_imgR1" />
+
+            <ImageView
+                android:id="@+id/lureicon_imgL3"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginTop="@dimen/icon_mgTop"
+                android:layout_marginEnd="@dimen/icon_mgHorizont"
+                android:src="@drawable/fishinglure_Item"
+                app:layout_constraintEnd_toStartOf="@id/lureicon_imgR3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lureicon_imgL2" />
+
+            <ImageView
+                android:id="@+id/lureicon_imgR3"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginStart="@dimen/icon_mgHorizont"
+                android:layout_marginTop="@dimen/icon_mgTop"
+                android:src="@drawable/fishinglure_Item"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/lureicon_imgL3"
+                app:layout_constraintTop_toBottomOf="@id/lureicon_imgR2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>

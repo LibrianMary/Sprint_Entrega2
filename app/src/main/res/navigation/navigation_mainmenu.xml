@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_mainmenu"
+    app:startDestination="@id/mainMenuFragment">
+
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.wireframe_sprint.MainMenuFragment"
+        android:label="fragment_main_menu_fragment"
+        tools:layout="@layout/fragment_main_menu_fragment" >
+        <action
+            android:id="@+id/action_mainMenuFragment_to_inGameFragment"
+            app:destination="@id/inGameFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_storeFragment2"
+            app:destination="@id/storeFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_colectionFragment"
+            app:destination="@id/colectionFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_settingsFragment2"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/storeFragment"
+        android:name="com.example.wireframe_sprint.StoreFragment"
+        android:label="fragment_store"
+        tools:layout="@layout/fragment_store" >
+        <action
+            android:id="@+id/action_storeFragment_to_fishingLureFragment"
+            app:destination="@id/fishingLureFragment" />
+        <action
+            android:id="@+id/action_storeFragment_to_fishingRodFragment"
+            app:destination="@id/fishingRodFragment" />
+        <action
+            android:id="@+id/action_storeFragment_to_storeLocationFragment"
+            app:destination="@id/storeLocationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/colectionFragment"
+        android:name="com.example.wireframe_sprint.ColectionFragment"
+        android:label="fragment_colection"
+        tools:layout="@layout/fragment_colection" >
+        <action
+            android:id="@+id/action_colectionFragment_to_fishColectionFragment"
+            app:destination="@id/fishColectionFragment" />
+        <action
+            android:id="@+id/action_colectionFragment_to_itensColectionFragment"
+            app:destination="@id/itensColectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inGameFragment"
+        android:name="com.example.wireframe_sprint.InGameFragment"
+        android:label="fragment_in_game"
+        tools:layout="@layout/fragment_in_game" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.wireframe_sprint.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/fishingLureFragment"
+        android:name="com.example.wireframe_sprint.FishingLureFragment"
+        android:label="fragment_fishing_lure"
+        tools:layout="@layout/fragment_fishing_lure" />
+    <fragment
+        android:id="@+id/fishingRodFragment"
+        android:name="com.example.wireframe_sprint.FishingRodFragment"
+        android:label="fragment_fishing_rod"
+        tools:layout="@layout/fragment_fishing_rod" />
+    <fragment
+        android:id="@+id/storeLocationFragment"
+        android:name="com.example.wireframe_sprint.StoreLocationFragment"
+        android:label="fragment_store_location"
+        tools:layout="@layout/fragment_store_location" />
+    <fragment
+        android:id="@+id/fishColectionFragment"
+        android:name="com.example.wireframe_sprint.FishColectionFragment"
+        android:label="fragment_fish_colection"
+        tools:layout="@layout/fragment_fish_colection" >
+        <action
+            android:id="@+id/action_fishColectionFragment_to_peixeDexFragment"
+            app:destination="@id/peixeDexFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itensColectionFragment"
+        android:name="com.example.wireframe_sprint.ItensColectionFragment"
+        android:label="fragment_itens_colection"
+        tools:layout="@layout/fragment_itens_colection" >
+        <action
+            android:id="@+id/action_itensColectionFragment_to_lureColectionFragment"
+            app:destination="@id/lureColectionFragment" />
+        <action
+            android:id="@+id/action_itensColectionFragment_to_fishingRodColectionFragment"
+            app:destination="@id/fishingRodColectionFragment" />
+        <action
+            android:id="@+id/action_itensColectionFragment_to_locationColectionFragment"
+            app:destination="@id/locationColectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/peixeDexFragment"
+        android:name="com.example.wireframe_sprint.PeixeDexFragment"
+        android:label="fragment_peixe_dex"
+        tools:layout="@layout/fragment_peixe_dex" >
+        <action
+            android:id="@+id/action_peixeDexFragment_to_fishInfoFragment"
+            app:destination="@id/fishInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fishInfoFragment"
+        android:name="com.example.wireframe_sprint.FishInfoFragment"
+        android:label="fragment_fish_info"
+        tools:layout="@layout/fragment_fish_info" />
+    <fragment
+        android:id="@+id/fishingRodColectionFragment"
+        android:name="com.example.wireframe_sprint.FishingRodColectionFragment"
+        android:label="fragment_fishing_rod_colection"
+        tools:layout="@layout/fragment_fishing_rod_colection" />
+    <fragment
+        android:id="@+id/locationColectionFragment"
+        android:name="com.example.wireframe_sprint.LocationColectionFragment"
+        android:label="fragment_location_colection"
+        tools:layout="@layout/fragment_location_colection" />
+    <fragment
+        android:id="@+id/lureColectionFragment"
+        android:name="com.example.wireframe_sprint.LureColectionFragment"
+        android:label="fragment_lure_colection"
+        tools:layout="@layout/fragment_lure_colection" />
+</navigation>

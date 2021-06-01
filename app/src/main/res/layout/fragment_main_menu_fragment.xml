@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparente"
+    tools:context=".MainMenuFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_baseline_menu_24" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="@dimen/MoneyField_width"
+            android:layout_height="@dimen/MoneyField_height"
+            android:src="@drawable/ic_moneyfield"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.96"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.005" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="@dimen/Plusbt_width"
+            android:layout_height="@dimen/Pusbt_height"
+            android:backgroundTint="@color/verde"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            app:icon="@drawable/ic_baseline_add_24"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.80"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.018"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/moneyField_txt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.93"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.027" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/constraint_mgTop"
+        android:paddingStart="@dimen/constraint_pd"
+        android:paddingTop="@dimen/constraint_pd"
+        android:paddingEnd="@dimen/constraint_pd"
+        android:paddingBottom="@dimen/constraint_pd">
+
+        <ImageView
+            android:id="@+id/title_img"
+            android:layout_width="@dimen/TittleImg_width"
+            android:layout_height="@dimen/TittleImg_height"
+            android:layout_marginStart="@dimen/mgHorizont_Title"
+            android:layout_marginEnd="@dimen/mgHorizont_Title"
+            android:src="@drawable/game_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Play_bt"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="@dimen/PlayBT_width"
+            android:layout_height="@dimen/PlayBT_height"
+            android:layout_marginBottom="@dimen/PlayBT_mgBottom"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            android:text="Play"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_img"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle" />
+
+        <Button
+            android:id="@+id/Loja_bt"
+            android:layout_width="@dimen/StoreBT_width"
+            android:layout_height="@dimen/StoreBT_height"
+            android:layout_marginStart="@dimen/StoreBT_mgHorizont"
+            android:layout_marginEnd="@dimen/StoreBT_mgHorizont"
+            android:text="Loja"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Play_bt"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <Button
+            android:id="@+id/Colcao_bt"
+            android:layout_width="@dimen/StoreBT_width"
+            android:layout_height="@dimen/StoreBT_height"
+            android:text="Coleção"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/Loja_bt"
+            app:layout_constraintStart_toStartOf="@id/Loja_bt"
+            app:layout_constraintTop_toBottomOf="@id/Loja_bt"
+            app:layout_constraintVertical_bias="0.18" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
