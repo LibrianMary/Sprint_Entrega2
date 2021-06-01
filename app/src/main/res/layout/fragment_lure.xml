@@ -92,7 +92,7 @@
             android:id="@+id/lureicon_img"
             android:layout_width="340dp"
             android:layout_height="340dp"
-            android:src="@drawable/fishinglure_Item"
+            android:src="@drawable/fishinglure_item"
             app:layout_constraintTop_toBottomOf="@id/luretitle_img"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

@@ -97,7 +97,7 @@
                 android:layout_width="@dimen/icon_Width"
                 android:layout_height="@dimen/icon_Height"
                 android:layout_marginEnd="@dimen/icon_mgHorizont"
-                android:src="@drawable/fishinglure_Item"
+                android:src="@drawable/fishinglure_item"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/lureicon_imgR"
                 app:layout_constraintStart_toStartOf="parent"
@@ -109,7 +109,7 @@
                 android:layout_width="@dimen/icon_Width"
                 android:layout_height="@dimen/icon_Height"
                 android:layout_marginStart="@dimen/icon_mgHorizont"
-                android:src="@drawable/fishinglure_Item"
+                android:src="@drawable/fishinglure_item"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/lureicon_imgL"
@@ -122,7 +122,7 @@
                 android:layout_height="@dimen/icon_Height"
                 android:layout_marginTop="@dimen/icon_mgTop"
                 android:layout_marginEnd="@dimen/icon_mgHorizont"
-                android:src="@drawable/fishinglure_Item"
+                android:src="@drawable/fishinglure_item"
                 app:layout_constraintEnd_toStartOf="@id/lureicon_imgR1"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/lureicon_imgL" />
@@ -133,7 +133,7 @@
                 android:layout_height="@dimen/icon_Height"
                 android:layout_marginStart="@dimen/icon_mgHorizont"
                 android:layout_marginTop="@dimen/icon_mgTop"
-                android:src="@drawable/fishinglure_Item"
+                android:src="@drawable/fishinglure_item"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/lureicon_imgL1"
                 app:layout_constraintTop_toBottomOf="@id/lureicon_imgR" />
@@ -144,7 +144,7 @@
                 android:layout_height="@dimen/icon_Height"
                 android:layout_marginTop="@dimen/icon_mgTop"
                 android:layout_marginEnd="@dimen/icon_mgHorizont"
-                android:src="@drawable/fishinglure_Item"
+                android:src="@drawable/fishinglure_item"
                 app:layout_constraintEnd_toStartOf="@id/lureicon_imgR2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/lureicon_imgL1" />
@@ -155,7 +155,7 @@
                 android:layout_height="@dimen/icon_Height"
                 android:layout_marginStart="@dimen/icon_mgHorizont"
                 android:layout_marginTop="@dimen/icon_mgTop"
-                android:src="@drawable/fishinglure_Item"
+                android:src="@drawable/fishinglure_item"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/lureicon_imgL2"
                 app:layout_constraintTop_toBottomOf="@id/lureicon_imgR1" />
@@ -166,7 +166,7 @@
                 android:layout_height="@dimen/icon_Height"
                 android:layout_marginTop="@dimen/icon_mgTop"
                 android:layout_marginEnd="@dimen/icon_mgHorizont"
-                android:src="@drawable/fishinglure_Item"
+                android:src="@drawable/fishinglure_item"
                 app:layout_constraintEnd_toStartOf="@id/lureicon_imgR3"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/lureicon_imgL2" />
@@ -177,7 +177,7 @@
                 android:layout_height="@dimen/icon_Height"
                 android:layout_marginStart="@dimen/icon_mgHorizont"
                 android:layout_marginTop="@dimen/icon_mgTop"
-                android:src="@drawable/fishinglure_Item"
+                android:src="@drawable/fishinglure_item"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/lureicon_imgL3"
                 app:layout_constraintTop_toBottomOf="@id/lureicon_imgR2" />
