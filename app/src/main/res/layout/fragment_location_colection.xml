@@ -86,11 +86,11 @@
                 android:layout_width="@dimen/localtiltle_Width"
                 android:layout_height="@dimen/localtitleimg_Height"
                 android:src="@drawable/locais_title"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintVertical_bias="0.04"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.04" />
 
             <ImageView
                 android:id="@+id/localicon_imgL"
@@ -115,6 +115,72 @@
                 app:layout_constraintStart_toEndOf="@id/localicon_imgL"
                 app:layout_constraintTop_toBottomOf="@id/namelocal_img"
                 app:layout_constraintVertical_bias="0.08" />
+
+            <ImageView
+                android:id="@+id/localicon_imgL1"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginTop="@dimen/icon_mgTop"
+                android:layout_marginEnd="@dimen/icon_mgHorizont"
+                android:src="@drawable/img_Item"
+                app:layout_constraintEnd_toStartOf="@id/localicon_imgR1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/localicon_imgL" />
+
+            <ImageView
+                android:id="@+id/localicon_imgR1"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginStart="@dimen/icon_mgHorizont"
+                android:layout_marginTop="@dimen/icon_mgTop"
+                android:src="@drawable/img_Item"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/localicon_imgL1"
+                app:layout_constraintTop_toBottomOf="@id/localicon_imgR" />
+
+            <ImageView
+                android:id="@+id/localicon_imgL2"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginTop="@dimen/icon_mgTop"
+                android:layout_marginEnd="@dimen/icon_mgHorizont"
+                android:src="@drawable/img_Item"
+                app:layout_constraintEnd_toStartOf="@id/localicon_imgR2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/localicon_imgL1" />
+
+            <ImageView
+                android:id="@+id/localicon_imgR2"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginStart="@dimen/icon_mgHorizont"
+                android:layout_marginTop="@dimen/icon_mgTop"
+                android:src="@drawable/img_Item"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/localicon_imgL2"
+                app:layout_constraintTop_toBottomOf="@id/localicon_imgR1" />
+
+            <ImageView
+                android:id="@+id/localicon_imgL3"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginTop="@dimen/icon_mgTop"
+                android:layout_marginEnd="@dimen/icon_mgHorizont"
+                android:src="@drawable/img_Item"
+                app:layout_constraintEnd_toStartOf="@id/localicon_imgR3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/localicon_imgL2" />
+
+            <ImageView
+                android:id="@+id/localicon_imgR3"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginStart="@dimen/icon_mgHorizont"
+                android:layout_marginTop="@dimen/icon_mgTop"
+                android:src="@drawable/img_Item"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/localicon_imgL3"
+                app:layout_constraintTop_toBottomOf="@id/localicon_imgR2" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </FrameLayout>

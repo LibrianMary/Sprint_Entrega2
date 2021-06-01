@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/transparente"
-    tools:context=".FishInfoFragment">
+    tools:context=".RodFragment">
+
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -77,10 +78,10 @@
         android:paddingStart="@dimen/constraint_pd">
 
         <ImageView
-            android:id="@+id/fishname_img"
+            android:id="@+id/rodname_img"
             android:layout_width="250dp"
             android:layout_height="70dp"
-            android:src="@drawable/fishname_title"
+            android:src="@drawable/fishingrod2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -88,25 +89,25 @@
             app:layout_constraintVertical_bias="0.04" />
 
         <ImageView
-            android:id="@+id/fishicon_img"
+            android:id="@+id/rodicon_img"
             android:layout_width="340dp"
             android:layout_height="340dp"
-            android:src="@drawable/fish_colection"
-            app:layout_constraintTop_toBottomOf="@id/fishname_img"
+            android:src="@drawable/fishingrod_item"
+            app:layout_constraintTop_toBottomOf="@id/rodname_img"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintVertical_bias="0.18"/>
 
         <TextView
-            android:id="@+id/fishinfo_txt"
+            android:id="@+id/rodinfo_txt"
             android:layout_width="match_parent"
             android:layout_height="@dimen/info_Height"
-            app:layout_constraintTop_toBottomOf="@id/fishicon_img"
+            app:layout_constraintTop_toBottomOf="@id/rodicon_img"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="@dimen/info_mgTop"
-            android:text="@string/FishInfo"
+            android:text="@string/fishingrod_info"
             android:textAlignment="center"
             android:textSize="@dimen/Info_fontsize"
             android:background="@drawable/fieldshape_itens"

@@ -24,6 +24,7 @@
         android:layout_height="match_parent">
 
         <ImageView
+            android:contentDescription="@string/moneyfield_description"
             android:layout_width="@dimen/MoneyField_width"
             android:layout_height="@dimen/MoneyField_height"
             android:src="@drawable/ic_moneyfield"
@@ -74,7 +75,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/constraint_mgTop"
             android:paddingStart="@dimen/constraint_pd"
             android:paddingTop="@dimen/constraint_pd"
@@ -82,16 +83,114 @@
             android:paddingBottom="@dimen/constraint_pd">
 
             <ImageView
-                android:id="@+id/namelocal_img"
+                android:contentDescription="@string/page_title"
+                android:id="@+id/namefishingrod_img"
                 android:layout_width="@dimen/fishingrod_Width"
                 android:layout_height="@dimen/fushungrod_Height"
                 android:src="@drawable/fishingrod"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintVertical_bias="0.04"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.04" />
 
+            <ImageView
+                android:contentDescription="@string/fishingrod_icon_description"
+                android:id="@+id/fishingrodicon_imgL"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginEnd="@dimen/icon_mgHorizont"
+                android:src="@drawable/fishingrod_item"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/fishingrodicon_imgR"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/namefishingrod_img"
+                app:layout_constraintVertical_bias="0.08" />
+
+            <ImageView
+                android:contentDescription="@string/fishingrod_icon_description"
+                android:id="@+id/fishingrodicon_imgR"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginStart="@dimen/icon_mgHorizont"
+                android:src="@drawable/fishingrod_item"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/fishingrodicon_imgL"
+                app:layout_constraintTop_toBottomOf="@id/namefishingrod_img"
+                app:layout_constraintVertical_bias="0.08" />
+
+            <ImageView
+                android:contentDescription="@string/fishingrod_icon_description"
+                android:id="@+id/fishingrodicon_imgL1"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginTop="@dimen/icon_mgTop"
+                android:layout_marginEnd="@dimen/icon_mgHorizont"
+                android:src="@drawable/fishingrod_item"
+                app:layout_constraintEnd_toStartOf="@id/fishingrodicon_imgR1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fishingrodicon_imgL" />
+
+            <ImageView
+                android:contentDescription="@string/fishingrod_icon_description"
+                android:id="@+id/fishingrodicon_imgR1"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginStart="@dimen/icon_mgHorizont"
+                android:layout_marginTop="@dimen/icon_mgTop"
+                android:src="@drawable/fishingrod_item"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/fishingrodicon_imgL1"
+                app:layout_constraintTop_toBottomOf="@id/fishingrodicon_imgR" />
+
+            <ImageView
+                android:contentDescription="@string/fishingrod_icon_description"
+                android:id="@+id/fishingrodicon_imgL2"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginTop="@dimen/icon_mgTop"
+                android:layout_marginEnd="@dimen/icon_mgHorizont"
+                android:src="@drawable/fishingrod_item"
+                app:layout_constraintEnd_toStartOf="@id/fishingrodicon_imgR2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fishingrodicon_imgL1" />
+
+            <ImageView
+                android:contentDescription="@string/fishingrod_icon_description"
+                android:id="@+id/fishingrodicon_imgR2"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginStart="@dimen/icon_mgHorizont"
+                android:layout_marginTop="@dimen/icon_mgTop"
+                android:src="@drawable/fishingrod_item"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/fishingrodicon_imgL2"
+                app:layout_constraintTop_toBottomOf="@id/fishingrodicon_imgR1" />
+
+            <ImageView
+                android:contentDescription="@string/fishingrod_icon_description"
+                android:id="@+id/fishingrodicon_imgL3"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginTop="@dimen/icon_mgTop"
+                android:layout_marginEnd="@dimen/icon_mgHorizont"
+                android:src="@drawable/fishingrod_item"
+                app:layout_constraintEnd_toStartOf="@id/fishingrodicon_imgR3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fishingrodicon_imgL2" />
+
+            <ImageView
+                android:contentDescription="@string/fishingrod_icon_description"
+                android:id="@+id/fishingrodicon_imgR3"
+                android:layout_width="@dimen/icon_Width"
+                android:layout_height="@dimen/icon_Height"
+                android:layout_marginStart="@dimen/icon_mgHorizont"
+                android:layout_marginTop="@dimen/icon_mgTop"
+                android:src="@drawable/fishingrod_item"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/fishingrodicon_imgL3"
+                app:layout_constraintTop_toBottomOf="@id/fishingrodicon_imgR2" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </FrameLayout>

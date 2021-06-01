@@ -32,16 +32,17 @@
     <dimen name="icon_Height">150dp</dimen>
     <dimen name="icon_mgHorizont">7dp</dimen>
     <dimen name="icon_mgTop">15dp</dimen>
-    <dimen name="fishinfo_Height">150dp</dimen>
-    <dimen name="fishinfo_mgTop">32dp</dimen>
-    <dimen name="fishInfo_fontsize">24sp</dimen>
-    <dimen name="fishinfo_mgHorizont">10dp</dimen>
-    <dimen name="fishinfo_pgTop">30dp</dimen>
-    <dimen name="fishInfo_pgHorizont">5dp</dimen>
+    <dimen name="info_Height">150dp</dimen>
+    <dimen name="info_mgTop">32dp</dimen>
+    <dimen name="Info_fontsize">24sp</dimen>
+    <dimen name="info_mgHorizont">10dp</dimen>
+    <dimen name="info_pgTop">30dp</dimen>
+    <dimen name="Info_pgHorizont">5dp</dimen>
     <dimen name="luretitle_Width">140dp</dimen>
     <dimen name="luretitle_Height">90dp</dimen>
-    <dimen name="localtiltle_Width">140dp</dimen>
+    <dimen name="localtiltle_Width">170dp</dimen>
     <dimen name="localtitleimg_Height">90dp</dimen>
     <dimen name="fishingrod_Width">295dp</dimen>
     <dimen name="fushungrod_Height">65dp</dimen>
+    <dimen name="slider_mgHorizont">8dp</dimen>
 </resources>

@@ -118,15 +118,42 @@
         android:id="@+id/fishingRodColectionFragment"
         android:name="com.example.wireframe_sprint.FishingRodColectionFragment"
         android:label="fragment_fishing_rod_colection"
-        tools:layout="@layout/fragment_fishing_rod_colection" />
+        tools:layout="@layout/fragment_fishing_rod_colection" >
+        <action
+            android:id="@+id/action_fishingRodColectionFragment_to_rodFragment"
+            app:destination="@id/rodFragment" />
+    </fragment>
     <fragment
         android:id="@+id/locationColectionFragment"
         android:name="com.example.wireframe_sprint.LocationColectionFragment"
         android:label="fragment_location_colection"
-        tools:layout="@layout/fragment_location_colection" />
+        tools:layout="@layout/fragment_location_colection" >
+        <action
+            android:id="@+id/action_locationColectionFragment_to_locationFragment"
+            app:destination="@id/locationFragment" />
+    </fragment>
     <fragment
         android:id="@+id/lureColectionFragment"
         android:name="com.example.wireframe_sprint.LureColectionFragment"
         android:label="fragment_lure_colection"
-        tools:layout="@layout/fragment_lure_colection" />
+        tools:layout="@layout/fragment_lure_colection" >
+        <action
+            android:id="@+id/action_lureColectionFragment_to_lureFragment"
+            app:destination="@id/lureFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.example.wireframe_sprint.LocationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" />
+    <fragment
+        android:id="@+id/rodFragment"
+        android:name="com.example.wireframe_sprint.RodFragment"
+        android:label="fragment_rod"
+        tools:layout="@layout/fragment_rod" />
+    <fragment
+        android:id="@+id/lureFragment"
+        android:name="com.example.wireframe_sprint.LureFragment"
+        android:label="fragment_lure"
+        tools:layout="@layout/fragment_lure" />
 </navigation>

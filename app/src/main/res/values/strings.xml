@@ -10,4 +10,11 @@
     <string name="local2bt_txt">Local 2</string>
     <string name="local1bt_txt">Local 1</string>
     <string name="FishInfo">Informações do peixe (descrição, local, preço e tamanho)</string>
+    <string name="moneyfield_description">Area do Dinheiro Virtual</string>
+    <string name="page_title">Título da página</string>
+    <string name="fishingrod_icon_description">Vara de Pescar icone</string>
+    <string name="fishinglure_info">Informações da Isca (Possibilidades, melhoras, espécies que ela pesca)</string>
+    <string name="fishingrod_info">Informações da Vara (Qualidade, preços e melhorias)</string>
+    <string name="local_info">Informações do Local (Peixes, descrição)</string>
+    <string name="slide_description">Slider de Musica</string>
 </resources>
